@@ -1,0 +1,132 @@
+
+.mainContent {
+    width:85%;
+      height:1000px;
+      margin: 0 auto;
+      background-image: linear-gradient(to right, #222, #19324d);
+      
+      display:flex;
+      margin-top:6%;
+      border-radius: 20px;
+      box-shadow: 0px 5px 5px rgba(0,0,0,.3) ,5px 5px 5px rgba(0,0,0,.5) , -1px -2px 2px rgba(0,0,0,.05) ;
+
+      
+}
+.inputField {
+    margin: 0 auto;
+    margin-top:5%;
+}
+.inputField input {
+    appearance: none;
+    background-color: none;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, orange, red);
+    line-height: 0;
+    font-size: 17px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    color: orange;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 1;
+    margin-bottom:20px;
+    background:none;
+
+}
+
+.inputField input:focus {
+    outline:none;
+}
+
+.inputField button {
+    float:right;
+    width:150px;
+    background-image: linear-gradient(to right, orange, rgba(255, 0, 0, 0.486));
+    border: 0;
+    height: 30px;
+    border-radius:10px;
+    
+    font-size: 20px;
+}
+
+.response {
+    display:inline-block;
+    background: linear-gradient(rgba(50, 50, 50, 0.24), rgba(0, 51, 0, 0.24));
+    width:30%;
+    
+}
+
+.response p:not(#special) {
+    color: white;
+    font-size: 30px;
+    text-align:center;
+    font-family: sans-serif;
+    line-height:30px;
+    margin:40px;
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #ff9933, #cc3300);
+    
+    
+}
+
+.response #special {
+    color: #666;
+    font-size: 20px;
+    text-align:center;
+    font-family: sans-serif;
+    
+    margin:40px;
+    
+    
+
+}
+
+#mainH1 {
+    color: white;
+    position:absolute;
+    left:40%;
+    bottom:20%;
+    font: 400 50px/1.2 'Leckerli One', Helvetica, sans-serif;
+    background: linear-gradient(white, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 800px) {
+    .response p:not(#special) {
+        font-size: 15px;
+    }
+    .response #special {
+        font-size:15px;
+    }
+    .inputField button{
+      float:none;
+      margin: 0 auto;
+        width:100%;
+    }
+    .mainContent {
+        width: 100%;
+        border-radius: 0;
+        display:block;
+        height: 600px;
+    }
+
+    .inputField {
+        width:50%;
+    }
+
+    .response {
+        width:100%;
+    }
+    
+    #mainH1 {
+        font: 200 15px/1.2 'Leckerli One', Helvetica, sans-serif;
+        position:relative;
+    }
+}

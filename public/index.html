@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   
+    <title>Időjárás</title>
+  </head>
+  <body>
+    <noscript>Engedélyezd a Javascriptet az oldal megfelelő működéséhez!</noscript>
+    <div id="root">
+      
+    </div>
+    
+  </body>
+
+  <style type="text/css">
+    body{
+      background-size: 2560px 1600px;
+      background-image: linear-gradient(to right , #ff9933, #cc3300),
+      url("bg2.png");
+      background-blend-mode: multiply;
+      background-repeat:no-repeat;
+
+      animation: Gradient 30s linear infinite;
+      
+    }
+
+    @keyframes Gradient {
+    0% {
+		background-position: 0%;
+	}
+	50% {
+		background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+	
+}
+
+    
+  </style>
+</html>
